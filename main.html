@@ -46,9 +46,9 @@
                     <img class="w-10 mx-auto" src="./assets/transaction1.png" alt="">
                     <h3 class="text-center">Pay Bill</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1 hover:bg-green-200">
+                <div id="transfer-history" class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/money1.png" alt="">
-                    <h3 class="text-center">Transaction</h3>
+                    <h3 class="text-center">Transfer History</h3>
                 </div>
             </div>
         </section>
@@ -61,7 +61,7 @@
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="fieldset-label font-bold text-black">Select a Service</label>
-                                <select class="select w-full rounded-3xl">
+                                <select id="allBank" class="select w-full rounded-3xl">
                                     <option disabled selected>Select a Bank</option>
                                     <option value="bkash">Bkash</option>
                                     <option value="nagad">Nagad</option>
@@ -139,11 +139,20 @@
             </div>
         </section>
 
+        <section id="transfer-history-section">
+            <h1 class="text-2xl text-center font-bold">Transfer History</h1>
+            <div id="transfer-container">
+                
+            </div>
+        </section>
+
     </section>
     <script src="./utilities/utilities.js"></script>
-    <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
+    <script src="./script/addMoney.js"></script>
+
     <script src="./script/cashOut.js"></script>
+    <script src="./script/transferHistory.js"></script>
 </body>
 
 </html>

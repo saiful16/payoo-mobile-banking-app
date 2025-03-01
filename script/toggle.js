@@ -1,5 +1,6 @@
 document.getElementById('cash-out-section').style.display = 'none'
 handleToggle('transfer-money-section', 'none')
+handleToggle('transfer-history-section', 'none')
 
 // document.getElementById('add-money').addEventListener('click', function(){
 //     // console.log('add money clicek')
@@ -18,22 +19,29 @@ handleToggle('transfer-money-section', 'none')
 document.getElementById('add-money').addEventListener('click', function(){
     handleToggle('add-money-section', 'block');
     handleToggle('cash-out-section', 'none');
-    handleToggle('transfer-money-section', 'none')
+    handleToggle('transfer-money-section', 'none');
+    handleToggle('transfer-history-section', 'none');
 })
 
 document.getElementById('cash-out').addEventListener('click', function(){
     handleToggle('add-money-section', 'none');
-    handleToggle('cash-out-section', 'block')
-    handleToggle('transfer-money-section', 'none')
+    handleToggle('cash-out-section', 'block');
+    handleToggle('transfer-money-section', 'none');
+    handleToggle('transfer-history-section', 'none');
 })
 
 document.getElementById('transfer-money').addEventListener('click',function(){
     handleToggle('add-money-section', 'none');
     handleToggle('cash-out-section', 'none')
     handleToggle('transfer-money-section', 'block')
+    handleToggle('transfer-history-section', 'none')
+})
+
+document.getElementById('transfer-history').addEventListener('click', function(){
+    handleToggle('add-money-section', 'none');
+    handleToggle('cash-out-section', 'none')
+    handleToggle('transfer-money-section', 'none')
+    handleToggle('transfer-history-section', 'block')
 })
 
 
-function handleToggle (id, status){
-    document.getElementById(id).style.display = status;
-}
