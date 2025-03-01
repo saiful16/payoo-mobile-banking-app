@@ -26,63 +26,124 @@
             <p>Enjoy easy and convenient financial services with us. Cashout charge is low. </p>
             <div class="grid grid-cols-3 gap-3 mt-5 cards cursor-pointer">
 
-                <div class="box border-1 rounded-sm py-1">
+                <div id="add-money" class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/money1.png" alt="">
                     <h3 class="text-center">Add Money</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1">
+                <div id="cash-out" class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/wallet1.png" alt="">
                     <h3 class="text-center">Cash Out</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1">
+                <div id="transfer-money" class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/money1.png" alt="">
                     <h3 class="text-center">Transfer Money</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1">
+                <div class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/bonus1.png" alt="">
                     <h3 class="text-center">Get Bonus</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1">
+                <div class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/transaction1.png" alt="">
                     <h3 class="text-center">Pay Bill</h3>
                 </div>
-                <div class="box border-1 rounded-sm py-1">
+                <div class="box border-1 rounded-sm py-1 hover:bg-green-200">
                     <img class="w-10 mx-auto" src="./assets/money1.png" alt="">
                     <h3 class="text-center">Transaction</h3>
                 </div>
             </div>
         </section>
-        <div class=" mx-auto mt-5">
+        <!-- add money -->
+        <section id="add-money-section">
+            <div class=" mx-auto mt-5">
+                <h1 class="font-bold text-center text-2xl">Add Money</h1>
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="card bg-slate-100 w-full shrink-0 shadow-xl">
+                        <div class="card-body">
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label font-bold text-black">Select a Service</label>
+                                <select class="select w-full rounded-3xl">
+                                    <option disabled selected>Select a Bank</option>
+                                    <option value="bkash">Bkash</option>
+                                    <option value="nagad">Nagad</option>
+                                    <option value="dbbl">DBBl</option>
+                                </select>
+                                <label class="fieldset-label font-bold text-black">Account Number</label>
+                                <input value="11789178918" id="account-number" type="number"
+                                    class="input rounded-3xl w-full" placeholder="Account Number" />
+                                <label class="fieldset-label font-bold text-black">PIN</label>
+                                <input id="pin-number" value="1234" type="number" class="input rounded-3xl w-full"
+                                    placeholder="Enter Your PIN" />
+                                <label class="fieldset-label font-bold text-black">Amount</label>
+                                <input id="amount" type="number" class="input rounded-3xl w-full"
+                                    placeholder="Enter Amount" />
+                                <div><a class="link link-hover font-bold text-black">Forgot password?</a></div>
+                                <button id="btn-add-money"
+                                    class="btn btn-neutral mt-4 rounded-3xl bg-blue-500 border-none font-bold">Add
+                                    Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cash out -->
+        <section id="cash-out-section">
+            <h1 id="test" class="text-2xl font-bold text-center">Cash Out</h1>
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card bg-slate-100 w-full shrink-0 shadow-xl">
+
                     <div class="card-body">
                         <fieldset class="fieldset">
-                            <label class="fieldset-label font-bold text-black">Select a Service</label>
-                            <select class="select w-full rounded-3xl">
-                                <option disabled selected>Select a Bank</option>
-                                <option value="bkash">Bkash</option>
-                                <option value="nagad">Nagad</option>
-                                <option value="dbbl">DBBl</option>
-                            </select>
                             <label class="fieldset-label font-bold text-black">Account Number</label>
-                            <input value="01789178918" id="account-number" type="number"
+                            <input value="11789178918" id="cash-out-account-number" type="number"
                                 class="input rounded-3xl w-full" placeholder="Account Number" />
                             <label class="fieldset-label font-bold text-black">PIN</label>
-                            <input id="pin-number" value="1234" type="number" class="input rounded-3xl w-full"
+                            <input id="cash-out-pin-number" value="1234" type="number" class="input rounded-3xl w-full"
                                 placeholder="Enter Your PIN" />
                             <label class="fieldset-label font-bold text-black">Amount</label>
-                            <input id="amount" type="number" class="input rounded-3xl w-full"
+                            <input id="cash-out-amount" type="number" class="input rounded-3xl w-full"
                                 placeholder="Enter Amount" />
                             <div><a class="link link-hover font-bold text-black">Forgot password?</a></div>
-                            <button id="btn-add-money"
-                                class="btn btn-neutral mt-4 rounded-3xl bg-blue-500 border-none font-bold">Add Money</button>
+                            <button id="btn-cash-out"
+                                class="btn btn-neutral mt-4 rounded-3xl bg-blue-500 border-none font-bold">Cash
+                                Out</button>
                         </fieldset>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section id="transfer-money-section">
+            <h1 id="test" class="text-2xl font-bold text-center">Transfer Money</h1>
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-slate-100 w-full shrink-0 shadow-xl">
+
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="fieldset-label font-bold text-black">Account Number</label>
+                            <input value="11789178918" id="cash-out-account-number" type="number"
+                                class="input rounded-3xl w-full" placeholder="Account Number" />
+
+                            <label class="fieldset-label font-bold text-black">Amount</label>
+                            <input id="cash-out-amount" type="number" class="input rounded-3xl w-full"
+                                placeholder="Enter Amount" />
+                            <label class="fieldset-label font-bold text-black">PIN</label>
+                            <input id="cash-out-pin-number" value="1234" type="number" class="input rounded-3xl w-full"
+                                placeholder="Enter Your PIN" />
+                            <button id="btn-cash-out"
+                                class="btn btn-neutral mt-4 rounded-3xl bg-blue-500 border-none font-bold">Transfer
+                                Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </section>
+    <script src="./utilities/utilities.js"></script>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toggle.js"></script>
+    <script src="./script/cashOut.js"></script>
 </body>
 
 </html>
